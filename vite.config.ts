@@ -6,12 +6,12 @@ export default defineConfig({
   root: "client",
   plugins: [react()],
   build: {
-    outDir: "../dist",
+    outDir: "dist",
     emptyOutDir: true,
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "client/src"),
+      "@": path.resolve(__dirname, "src"),
     },
   },
 });
